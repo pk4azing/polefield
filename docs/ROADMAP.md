@@ -2,6 +2,9 @@
 
 ## Phase 0 — Discovery (2 weeks)
 
+- [ ] Codebase audit sign-off — reuse LFRAS tenant/audit, devcentra forms ([CODEBASE_AUDIT.md](CODEBASE_AUDIT.md))
+- [ ] Decide build path: greenfield polefield vs extend LFRAS_LPHONE
+- [ ] Decide mobile stack: Flutter vs Expo/RN
 - [ ] Stakeholder interviews: utility vs contractor vs telecom OSP
 - [ ] Pole workflow selection: inspection vs survey vs joint-use
 - [ ] Compliance requirements (NERC, joint-use agreements, photo retention)

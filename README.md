@@ -14,6 +14,7 @@ Fulcrum-class field data platform for **utility pole management, measurement, an
 | [docs/RELIABILITY.md](docs/RELIABILITY.md) | SLOs, failure modes, ops |
 | [docs/ROADMAP.md](docs/ROADMAP.md) | Phased delivery plan |
 | [docs/MONDAY_TASKS.md](docs/MONDAY_TASKS.md) | Task board spec (Monday.com + GitHub Issues) |
+| [docs/CODEBASE_AUDIT.md](docs/CODEBASE_AUDIT.md) | Existing repos to reuse; gaps; build vs extend |
 
 ## Product goal
 
@@ -31,7 +32,7 @@ Build a platform comparable to [Fulcrum](https://www.fulcrumapp.com/) for pole w
 |-------|--------|-----------|
 | API | Django 5 + DRF | Matches `azing-django` patterns; fast admin, auth, multi-tenant |
 | Database | PostgreSQL 16 + PostGIS | Spatial queries, industry standard for GIS |
-| Mobile | React Native + WatermelonDB | Proven offline-first pattern; single codebase iOS/Android |
+| Mobile | Flutter (preferred) or Expo + WatermelonDB | Flutter matches MiCi roadmap + local toolchain; Expo has running code in `mihu`/`azim` |
 | Object storage | S3-compatible (MinIO dev) | Photos, video, signatures |
 | Queue | Celery + Redis | Media processing, exports, webhooks |
 | Web portal | Django templates or Next.js | Admin + project dashboards |
