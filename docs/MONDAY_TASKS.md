@@ -83,8 +83,13 @@ Create a **public board** named **PoleField** in your default workspace.
 37. Backup and restore drill
 38. Tenant isolation security audit
 
+## Board (live)
+
+- **Monday board:** https://a-zing-force.monday.com/boards/5031424397
+- **Workspace:** Project Management (A-Zing)
+
 ## Links
 
-- GitHub repo: `https://github.com/pk4azing/polefield`
+- GitHub repo: https://github.com/pk4azing/polefield
 - Architecture: `docs/ARCHITECTURE.md`
 - Sync protocol: `docs/SYNC_PROTOCOL.md`
