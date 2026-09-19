@@ -29,59 +29,73 @@ Create a **public board** named **PoleField** in your default workspace.
 
 ### Phase 0 — Discovery
 
-1. Stakeholder interviews — utility, contractor, telecom OSP
-2. Select primary workflow — inspection vs survey vs joint-use
-3. Document compliance requirements (retention, audit)
-4. Fulcrum gap analysis — features to match vs differentiate
-5. Sign off SLOs and reliability targets
-6. Write PRD and mobile/web wireframes
+1. Codebase audit sign-off — reuse LFRAS, devcentra, MiCi patterns
+2. Decide build path — greenfield polefield vs extend LFRAS_LPHONE
+3. Decide mobile stack — Flutter vs Expo/React Native
+4. Decide maps stack — Leaflet/OSM web; flutter_map vs Mapbox mobile
+5. Review LFRAS GAP_ANALYSIS_REPORT — tenant isolation + file validation
+6. Stakeholder interviews — utility, contractor, telecom OSP
+7. Select primary workflow — inspection vs survey vs joint-use
+8. Document compliance requirements (retention, audit)
+9. Fulcrum gap analysis — features to match vs differentiate
+10. Sign off SLOs and reliability targets
+11. Write PRD and mobile/web wireframes
 
 ### Phase 1 — Platform foundation
 
-7. Django + DRF scaffold with Docker Compose
-8. Multi-tenant org model and JWT authentication
-9. Form schema engine (JSON) with admin publish
-10. Record CRUD API with PostGIS geometry
-11. S3 presigned media upload pipeline
-12. Web portal — projects, record table, map view
-13. CI — lint, test, compose config validate
+12. Port LFRAS multi-tenant + RBAC pattern into polefield
+13. Port devcentra form_schema design to backend API
+14. PostGIS enablement spike — geometry fields + GIST indexes
+15. Wire DRF + SimpleJWT from day one (not deferred)
+16. Evaluate MiCi geo helpers for geocoding pre-PostGIS
+17. Django + DRF scaffold with Docker Compose
+18. Multi-tenant org model and JWT authentication
+19. Form schema engine (JSON) with admin publish
+20. Record CRUD API with PostGIS geometry
+21. S3 presigned media upload pipeline
+22. Web portal — projects, record table, map view
+23. CI — lint, test, compose config validate
 
 ### Phase 2 — Offline mobile
 
-14. React Native app shell and auth flow
-15. WatermelonDB local schema
-16. Dynamic form renderer from schema JSON
-17. Sync push endpoint — idempotent mutations
-18. Sync pull endpoint — sequence cursor + bbox
-19. Offline photo capture and background upload
-20. GPS capture with optional Bluetooth GPS
-21. E2E offline test — 50 records, zero duplicates
+24. Spike offline DB — Drift (Flutter) vs WatermelonDB (RN)
+25. Port devcentra SchemaForm pattern to mobile renderer
+26. MiCi GPS EXIF screening on field photos
+27. Mobile app shell and auth flow (Flutter or Expo)
+28. Local DB schema mirroring server
+29. Dynamic form renderer from schema JSON
+30. Sync push endpoint — idempotent mutations
+31. Sync pull endpoint — sequence cursor + bbox
+32. Offline photo capture and background upload
+33. GPS capture with optional Bluetooth GPS
+34. E2E offline test — 50 records, zero duplicates
 
 ### Phase 3 — Pole domain
 
-22. Seed choice lists — owners, materials, attachments
-23. Pole inspection app template
-24. Pole survey / MRE template with repeatable attachments
-25. Joint-use attachment app template
-26. Laser measurement CSV import
-27. Conflict resolution UI in web portal
-28. Pilot — 500 poles with one contractor
+35. Document LCRF scope — offline tablet forms are not built yet
+36. Seed choice lists — owners, materials, attachments
+37. Pole inspection app template
+38. Pole survey / MRE template with repeatable attachments
+39. Joint-use attachment app template
+40. Laser measurement CSV import
+41. Conflict resolution UI in web portal
+42. Pilot — 500 poles with one contractor
 
 ### Phase 4 — GIS & integrations
 
-29. GeoJSON / CSV / KML export
-30. Query API — read-only SQL subset
-31. Webhooks on record submit
-32. ArcGIS Feature Service integration
-33. PDF report generation per project
+43. GeoJSON / CSV / KML export
+44. Query API — read-only SQL subset
+45. Webhooks on record submit
+46. ArcGIS Feature Service integration
+47. PDF report generation per project
 
 ### Phase 5 — Reliability & scale
 
-34. Load test — 500 concurrent sync clients
-35. Postgres read replica for exports
-36. Monitoring and SLO dashboard
-37. Backup and restore drill
-38. Tenant isolation security audit
+48. Load test — 500 concurrent sync clients
+49. Postgres read replica for exports
+50. Monitoring and SLO dashboard
+51. Backup and restore drill
+52. Tenant isolation security audit
 
 ## Board (live)
 
@@ -92,4 +106,7 @@ Create a **public board** named **PoleField** in your default workspace.
 
 - GitHub repo: https://github.com/pk4azing/polefield
 - Architecture: `docs/ARCHITECTURE.md`
+- Codebase audit: `docs/CODEBASE_AUDIT.md`
 - Sync protocol: `docs/SYNC_PROTOCOL.md`
+
+**Total tasks on board:** 52 (+ 1 overview item)

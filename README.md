@@ -40,7 +40,7 @@ Build a platform comparable to [Fulcrum](https://www.fulcrumapp.com/) for pole w
 
 ## Tracking
 
-- **Monday.com board:** https://a-zing-force.monday.com/boards/5031424397 (38 tasks, 6 phases)
+- **Monday.com board:** https://a-zing-force.monday.com/boards/5031424397 (52 tasks, 6 phases)
 - **GitHub:** https://github.com/pk4azing/polefield
 
 ## License

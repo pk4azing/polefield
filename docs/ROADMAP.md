@@ -5,6 +5,8 @@
 - [ ] Codebase audit sign-off — reuse LFRAS tenant/audit, devcentra forms ([CODEBASE_AUDIT.md](CODEBASE_AUDIT.md))
 - [ ] Decide build path: greenfield polefield vs extend LFRAS_LPHONE
 - [ ] Decide mobile stack: Flutter vs Expo/RN
+- [ ] Decide maps stack: Leaflet/OSM web; flutter_map vs Mapbox mobile
+- [ ] Review LFRAS GAP_ANALYSIS_REPORT if extending LFRAS
 - [ ] Stakeholder interviews: utility vs contractor vs telecom OSP
 - [ ] Pole workflow selection: inspection vs survey vs joint-use
 - [ ] Compliance requirements (NERC, joint-use agreements, photo retention)
@@ -15,6 +17,10 @@
 
 ## Phase 1 — Platform foundation (6 weeks)
 
+- [ ] Port LFRAS multi-tenant + RBAC pattern
+- [ ] Port devcentra form_schema design to API
+- [ ] PostGIS enablement spike
+- [ ] Wire DRF + SimpleJWT from day one
 - [ ] Django project scaffold, Docker Compose, health checks
 - [ ] Multi-tenant org model + JWT auth
 - [ ] Form schema engine (JSON) + admin publish
@@ -27,8 +33,11 @@
 
 ## Phase 2 — Offline mobile (8 weeks)
 
-- [ ] React Native app shell + auth
-- [ ] WatermelonDB local schema mirroring server
+- [ ] Spike offline DB — Drift (Flutter) vs WatermelonDB (RN)
+- [ ] Port devcentra SchemaForm to mobile renderer
+- [ ] MiCi GPS EXIF screening on field photos
+- [ ] Mobile app shell + auth (Flutter or Expo)
+- [ ] Local DB schema mirroring server
 - [ ] Dynamic form renderer from schema JSON
 - [ ] Outbox sync push/pull (see SYNC_PROTOCOL.md)
 - [ ] Offline photo capture + background upload
@@ -38,6 +47,7 @@
 
 ## Phase 3 — Pole domain templates (4 weeks)
 
+- [ ] Document LCRF scope — marketed offline forms not built yet
 - [ ] Seed choice lists (owners, materials, attachment types)
 - [ ] Pole inspection app template
 - [ ] Pole survey / MRE app template (repeatable attachments)
