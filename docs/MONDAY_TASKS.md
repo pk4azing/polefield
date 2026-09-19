@@ -18,7 +18,7 @@ Create a **public board** named **PoleField** in your default workspace.
 | Column | Type |
 |--------|------|
 | Status | status (Not started / Working on it / Done / Blocked) |
-| Priority | status (Critical / High / Medium / Low) |
+| Priority | status (Critical / High / Medium) |
 | Phase | dropdown |
 | Owner | people |
 | Due date | date |
@@ -110,3 +110,18 @@ Create a **public board** named **PoleField** in your default workspace.
 - Sync protocol: `docs/SYNC_PROTOCOL.md`
 
 **Total tasks on board:** 52 (+ 1 overview item)
+
+## Due dates (set on board)
+
+Tasks are due within each phase window from project start (2026-09-19):
+
+| Phase | Window |
+|-------|--------|
+| Phase 0 | Sep 19 – Oct 3, 2026 |
+| Phase 1 | Oct 3 – Nov 16, 2026 |
+| Phase 2 | Nov 16, 2026 – Jan 11, 2027 |
+| Phase 3 | Jan 11 – Feb 8, 2027 |
+| Phase 4 | Feb 8 – Mar 22, 2027 |
+| Phase 5 | Mar 22 – May 3, 2027 |
+
+Priority: Phase 0 + critical-path items → **High**; tenant isolation / E2E sync → **Critical**; default → **Medium**.
